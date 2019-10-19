@@ -1,0 +1,17 @@
+def square_digits(num):
+    stri=str(num)
+    print(num)
+    print(stri)
+    new=''
+    o=int(len(stri))
+    print(o)
+    i=0
+    while i < o:
+      k=int(stri[i])
+      t=k*k
+      new=new+str(t)
+      
+      i=i+1
+    newt=int(new)
+    return newt  
+    
