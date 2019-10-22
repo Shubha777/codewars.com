@@ -42,3 +42,30 @@ def productFib(prod):
                  break
              else:
                  q=q+1
+
+
+
+#after spending 2 hours:
+
+ef productFib(prod):
+    m=[]
+    n=[]
+    t=0
+    k=1
+    c=0
+    while c< (prod):
+          c=t+k
+          t=k
+          k=c
+        
+          n.append(c) 
+  
+    q=0
+    while q < len(n):
+              
+             if n[q]*n[q+1] > prod:
+                 return [n[q],n[q+1],False]
+             elif n[q]*n[q+1] == prod:
+                 return [n[q],n[q+1],True]
+             else:
+                 q=q+1
