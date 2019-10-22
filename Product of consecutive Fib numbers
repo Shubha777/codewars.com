@@ -1,0 +1,44 @@
+def productFib(prod):
+    
+    
+    q=0
+    m=[] 
+    r=[]
+    n=[]
+    i=1
+    t=0
+    k=1
+    c=0
+    while i< prod:
+       if prod % i ==0:
+         m.append(i)
+       i=i+1
+    while True:
+        if c< prod:
+          c=t+k
+          t=k
+          k=c
+          n.append(c)
+          print(c)
+        else:
+          break
+    m=set(m)
+    yu=set(n)
+    z= list(m.intersection(yu))
+
+
+    for w in z:
+      xd= int(prod / w)
+      if xd in z:
+        
+        return [w,xd,True] if w<= xd else [xd,w,True]
+      else:
+          print(n)
+          while q < len(n):
+              
+             if n[q]*n[q+1] > prod:
+                 print(prod)
+                 return [n[q],n[q+1],False]
+                 break
+             else:
+                 q=q+1
